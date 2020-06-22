@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>记事本</title>
+    <style type="text/css">
+      #userNote{width: 500px;height: 500px;font-size: 20px;font-family: "sans-serif";}
+    </style>
+	</head>
+	<body>
+    <div>警告：内容存储在浏览器本地，卸载或更换浏览器会导致数据丢失，请勿依赖本工具长期存储内容。</div><br>
+		<textarea id="userNote" placeholder="记一下" autofocus="autofocus"></textarea>
+    <div id="info">
+      <noscript>网页需要运行脚本才能自动保存输入的内容，请允许阻止的内容。</noscript>
+    </div>
+    
+		<script type="text/javascript">
+      let infoBar = document.getElementById("info");
+      if(Storage){
+        let userNote = document.getElementById("userNote");
+        loadUserNote();
+        readyToSave();
+      }else{
+        info.innerHTML = "当前浏览器不支持 Web 存储，您输入的内容不会被保存。";
+      }
+      function readyToSave(){
+        let stopInputTimer;
+        userNote.oninput=function(){
+          clearTimeout(stopInputTimer);
+          info.innerHTML = "正在输入...";
+          stopInputTimer = setTimeout(saveUserNote, 1000);
+        }
+      }
+      function saveUserNote(){
+        localStorage.userNote = userNote.value;
+        info.innerHTML = "已保存，共计 " + userNote.value.length + "个字符";
+      }
+      function loadUserNote(){
+        if(localStorage.userNote){
+          userNote.value = localStorage.userNote;
+          info.innerHTML = "成功加载上次的笔记，共计 " + userNote.value.length + "个字符";
+        }
+      }
+		</script>
+	</body>
+</html>
