@@ -9,7 +9,8 @@ h3 {
 }
 .card {
   display: block;
-  margin: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
   width: 320px;
   background-color: #fff;
   border: 1px solid #ebebeb;
