@@ -5,12 +5,11 @@ h3 {
 }
 .flex-container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 .card {
   display: block;
-  margin-bottom: 20px;
+  margin: 10px;
   width: 320px;
   background-color: #fff;
   border: 1px solid #ebebeb;
