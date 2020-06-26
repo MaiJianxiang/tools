@@ -12,47 +12,44 @@ html, body {
   padding-top: 20px;
   padding-bottom: 200px;
 }
-
-form {
-  line-height: 40px;
+h1 {
+  /* margin-left: 10%;
+  margin-right: 10%; */
 }
-
-#mainContainer {
-  margin: 50px 0;
-  font-size: 240px;
+h3 {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
-
-#FPS {
-  width: 2em;
-  text-align: center;
-  border-width: 0 0 1px 0;
-  border-radius: 0;
-  border-color: #888
+.flex-container {
+  /* margin: 0 10%; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-
-#FPS:focus {
-  outline: 0;
-  border-color: #000
+.card {
+  display: block;
+  margin-bottom: 20px;
+  width: 320px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  padding: 20px;
 }
-
-label {
-  cursor: pointer;
-  margin-right: 1em;
+.card:hover {
+  box-shadow: 1px 1px 4px 0px #ccc;
 }
-
-input {
-  margin-right: 0.5em;
+.card h3 {
+  border-bottom: 1px solid #ccc;
+  margin-top: 0;
+  padding-bottom: 6px;
 }
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+.describe {
+  color: #777;
 }
-
-input[type="number"] {
-  -moz-appearance: textfield;
+.describe img{
+  width: 50px;
+  float: left;
 }
-
 footer{
   height: 170px;
   margin-top: -170px;
