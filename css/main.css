@@ -28,6 +28,7 @@ h3 {
   color: #777;
 }
 .describe img{
-  width: 50px;
   float: left;
+  width: 50px;
+  padding: 5px 8px 0 0;
 }

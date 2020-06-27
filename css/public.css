@@ -1,6 +1,8 @@
 html, body {
   height: 100%;
-  background-color: #f9f9f9;
+}
+body {
+  background-color: #f9f9f6;
 }
 #wrap {
   margin-left: 10%;
