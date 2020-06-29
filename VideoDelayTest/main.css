@@ -7,6 +7,12 @@ form {
   font-size: 240px;
 }
 
+@media (max-width:1650px) {
+  #mainContainer {
+    font-size: 180px;
+  }
+}
+
 #FPS {
   width: 2em;
   text-align: center;
