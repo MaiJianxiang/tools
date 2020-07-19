@@ -20,23 +20,23 @@ footer{
   flex-wrap: wrap;
   padding: 20px 10%;
 }
-#aboutMe {
+#SocialPlatforms {
   width: 200px;
 }
-#aboutMe a {
+#SocialPlatforms a {
   display: block;
 }
-#aboutMe img {
+#SocialPlatforms img {
   height: 20px;
   margin: 10px 10px 10px 0;
   float: left;
 }
-#aboutMe span {
+#SocialPlatforms span {
   line-height: 40px;
   color: #777;
   font-size: 14px;
 }
-#aboutMe a:hover span {
+#SocialPlatforms a:hover span {
   color: #000;
 }
 #statement {

@@ -3,33 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>视频延时测试</title>
+  <title>RGB进制转换器</title>
   <link rel="stylesheet" type="text/css" href="../css/normalize.min.css"/>
   <link rel="stylesheet" type="text/css" href="../css/public.min.css"/>
   <link rel="stylesheet" type="text/css" href="main.min.css"/>
 </head>
 <body>
   <div id="wrap">
-    <h1>视频延时测试</h1>
-    <form action="#">
-      <div>当前视频刷新率为<input type="number" id="FPS" min="1" max="144" value="60">Hz，<span id="FrameTime"></span>。</div>
-      <div class="radioBar">
-        <span>模式：</span>
-        <label>
-          <input type="radio" name="mode" id="FrameMode" />
-          <span>显示帧数</span>
-        </label>
-        <label>
-          <input type="radio" name="mode" id="TimeMode" />
-          <span>显示时间</span>
-        </label>
-        <label>
-          <input type="radio" name="mode" id="stop" />
-          <span>停止</span>
-        </label>
+    <h1>十进制转十六进制</h1>
+    <div id="d2h">
+      <div>
+        <span class="beforInput">R</span><input id='R' type="number"><br>
+        <span class="beforInput">G</span><input id='G' type="number"><br>
+        <span class="beforInput">B</span><input id='B' type="number"><br>
       </div>
-    </form>
-    <div id="mainContainer"></div>
+      <button type="button" id="d2hBtn">转换</button>
+      <div id="d2hColor"></div>
+      <span id="d2hResult"></span>
+    </div>
   </div> <!-- /wrap -->
   <footer>
     <div id="SocialPlatforms">
